@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+    <title>contact - le fournil</title>
+</head>
+<body>
+    
+     <header><h1>LE FOURNIL</h1>
+         <nav>
+
+         <ul>
+           <li><a href="#">Acceuil</a></li>
+           <li><a href="#produits">La carte</a></li>
+           <li><a href="#">index</a></li>
+         </ul>
+
+        </nav>
+    </header>
+    
+    
+    <main>
+
+    <form action="#" method="post">
+  <fieldset>
+    <legend>Vos coordonnées</legend>
+    <p>
+      <label for="nom">Nom *</label>
+      <input type="text" id="nom" name="nom" autocomplete="name" required>
+    </p>
+    <p>
+      <label for="email">E-mail *</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+    </p>
+    <p>
+      <label for="tel">Téléphone</label>
+      <input type="tel" id="tel" name="tel" autocomplete="tel"
+             pattern="0[1-9]([ .]?[0-9]{2}){4}" title="Format : 06 12 34 56 78">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Votre commande</legend>
+    <p>
+      <label for="produit">Produit</label>
+      <select id="produit" name="produit" required>
+        <option value="">— Choisir —</option>
+        <option value="tradition">Tradition</option>
+        <option value="cereales">Céréales</option>
+        <option value="brioche">Brioche</option>
+        <option value="campagne">Pain de campagne</option>
+      </select>
+    </p>
+    <p>
+      <label for="qte">Quantité</label>
+      <input type="number" id="qte" name="qte" min="1" max="20" value="1">
+    </p>
+    <p>
+      <label for="date">Date de retrait *</label>
+      <input type="date" id="date" name="date" required>
+    </p>
+    <p>
+      <input type="radio" id="magasin" name="retrait" value="magasin" checked>
+      <label for="magasin">En magasin</label>
+      <input type="radio" id="livraison" name="retrait" value="livraison">
+      <label for="livraison">Livraison</label>
+    </p>
+    <p>
+      <label for="msg">Message</label>
+      <textarea id="msg" name="msg" rows="4" maxlength="300"></textarea>
+    </p>
+  </fieldset>
+
+  <p>
+    <input type="checkbox" id="cgv" name="cgv" required>
+    <label for="cgv">J'accepte les conditions de précommande *</label>
+  </p>
+  <button type="submit">Envoyer la précom  
+    </main>
+
+
+        <footer>
+    <p>22 rue de la poupée qui tousse</p>
+    <p>57490 l'hopital</p>
+    <p>ouvert du mardi au dimanche </p>
+    <p>de 6H a 14H</p>
+        </footer>
+      
+
+
+</body>
+</html>
